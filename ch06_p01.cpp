@@ -64,7 +64,6 @@ int main() {
     printf("%s%d", "Number of primes: ", count);
     puts("");
 
-    // UNCOMMENT THIS BEFORE SUBMITTING
-    // system("pause");
+     system("pause");
     return 0;
 }
