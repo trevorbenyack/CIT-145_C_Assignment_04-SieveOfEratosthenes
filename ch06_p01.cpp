@@ -24,7 +24,6 @@ int main() {
 
     bool *numArray = (bool *)malloc((limit+1)*sizeof(bool));
 
-    //bool numArray[limit + 1];
     unsigned int count = 0;
 
     // initializes all numArray elements to true
