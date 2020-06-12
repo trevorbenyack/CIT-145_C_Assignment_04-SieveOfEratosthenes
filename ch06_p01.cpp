@@ -21,7 +21,10 @@ int main() {
     scanf("%d", &limit);
     printf("%s%d", "Primes up to ", limit);
     puts("");puts("");
-    bool numArray[limit + 1];
+
+    bool *numArray = (bool *)malloc((limit+1)*sizeof(bool));
+
+    //bool numArray[limit + 1];
     unsigned int count = 0;
 
     // initializes all numArray elements to true
@@ -64,6 +67,8 @@ int main() {
     printf("%s%d", "Number of primes: ", count);
     puts("");
 
-     system("pause");
+    free(numArray);
+
+     //system("pause");
     return 0;
 }
